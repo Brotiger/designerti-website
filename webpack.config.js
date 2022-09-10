@@ -44,7 +44,9 @@ const optimization = () => {
 module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
-  entry: "./js/app.js",
+  entry: {
+    main: ["@babel/polyfill", "./js/app.js"],
+  },
   output: {
     filename: filename("js"),
     path: path.resolve(__dirname, buildFolder),
@@ -98,6 +100,16 @@ module.exports = {
       {
         test: /\.s[ac]ss$/,
         use: cssLoaders("sass-loader"),
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
