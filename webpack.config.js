@@ -10,6 +10,22 @@ const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
 
 const buildFolder = "dist/" + (isProd ? "prod" : "dev");
+const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
+
+const cssLoaders = (extra) => {
+  const loaders = [
+    {
+      loader: MiniCssExtractPlugin.loader,
+    },
+    "css-loader",
+  ];
+
+  if (extra) {
+    loaders.push(extra);
+  }
+
+  return loaders;
+};
 
 const optimization = () => {
   const config = {
@@ -30,7 +46,7 @@ module.exports = {
   mode: "development",
   entry: "./js/app.js",
   output: {
-    filename: "[name].[contenthash].js",
+    filename: filename("js"),
     path: path.resolve(__dirname, buildFolder),
   },
   resolve: {
@@ -56,54 +72,33 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/img/ava.png"),
-          to: path.resolve(__dirname, buildFolder + "/img"),
+          from: path.resolve(__dirname, "src/assets/img/ava.png"),
+          to: path.resolve(__dirname, buildFolder + "/assets/img"),
         },
       ],
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: filename("css"),
     }),
   ],
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
-        ],
+        use: cssLoaders(),
       },
       {
         test: /\.less$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
-          "less-loader",
-        ],
+        use: cssLoaders("less-loader"),
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
         use: ["file-loader"],
       },
-      /*{
+      {
         test: /\.s[ac]ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-              reloadAll: true,
-            },
-          },
-          "css-loader",
-          "sass-loader",
-        ],
-      },*/
+        use: cssLoaders("sass-loader"),
+      },
     ],
   },
 };

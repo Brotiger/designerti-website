@@ -1,3 +1,3 @@
+import "@/styles/style.scss";
 import * as $ from "jquery";
-import "@/styles/style";
-import "@/styles/test.css";
+import "bootstrap";
