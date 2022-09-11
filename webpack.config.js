@@ -68,7 +68,7 @@ module.exports = {
       title: "Designerti",
       template: "./index.html",
       minify: {
-        collapseWhitespace: isProd,
+        collapseWhitespace: false,
       },
     }),
     new CleanWebpackPlugin(),

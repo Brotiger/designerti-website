@@ -7,6 +7,7 @@
       color: #b71218;
       font-size: 100px;
       text-transform: uppercase;
+      font-family: "Gallient";
     }
 
     .translation {
@@ -23,8 +24,55 @@
     }
   }
 
+  .lt-card {
+    transition: all 0.2s ease-out;
+    top: 0;
+    left: 0;
+  }
+
+  .rt-card {
+    transition: all 0.2s ease-out;
+    top: 0;
+    right: 0;
+  }
+
+  .lb-card {
+    transition: all 0.2s ease-out;
+    bottom: 0;
+    left: 0;
+  }
+
+  .rb-card {
+    transition: all 0.2s ease-out;
+    bottom: 0;
+    right: 0;
+  }
+
+  .lt-card:hover {
+    top: -25px;
+    left: -25px;
+  }
+
+  .rt-card:hover {
+    top: -25px;
+    right: -25px;
+  }
+
+  .lb-card:hover {
+    bottom: -25px;
+    left: -25px;
+  }
+
+  .rb-card:hover {
+    bottom: -25px;
+    right: -25px;
+  }
+
   .types {
+    padding-left: 25px;
+    padding-right: 25px;
     position: relative;
+
     .crosshair {
       position: absolute;
       left: calc(50% - 150px);
@@ -32,6 +80,7 @@
       width: 300px;
       height: 300px;
       background-color: #b71218;
+      border-radius: 50%;
     }
   }
 }
