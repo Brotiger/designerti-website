@@ -62,6 +62,7 @@ module.exports = {
     port: 4000,
     hot: isDev,
   },
+  devtool: isDev ? "source-map" : false,
   plugins: [
     new HTMLWebpackPlugin({
       title: "Designerti",
@@ -75,6 +76,10 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "src/assets/img/ava.png"),
+          to: path.resolve(__dirname, buildFolder + "/assets/img"),
+        },
+        {
+          from: path.resolve(__dirname, "src/assets/img/logo.svg"),
           to: path.resolve(__dirname, buildFolder + "/assets/img"),
         },
       ],
@@ -92,10 +97,6 @@ module.exports = {
       {
         test: /\.less$/,
         use: cssLoaders("less-loader"),
-      },
-      {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: ["file-loader"],
       },
       {
         test: /\.s[ac]ss$/,

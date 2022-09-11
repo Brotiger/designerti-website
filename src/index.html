@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
   </head>
-  <body>
-    <img src="./assets/img/ava.png" />
+  <body class="container">
+    <header class="border-bottom border-dark">
+      <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.svg" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="ms-md-auto navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link hover" href="#">Главная</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link hover" href="#">Обо мне</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link hover" href="#">Услуги</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link hover" href="#">Блог</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link hover" href="#">Мерч</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn-d-danger px-5 py-2 ms-2">
+                  Заказать
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-home border-bottom border-dark">
+      <div class="row px-2 py-5">
+        <div class="col">
+          <div class="h1 text-danger font-weight-bold">Привет,</div>
+          <div class="pt-4 pb-5 ms-2">
+            меня зовут Елизавета.<br />Я графический дизайнер, мне 23 года.<br />К
+            своему делу отношесь с трепетом, ответственно, с высоким уровнем
+            профессионализма.
+          </div>
+          <button type="button" class="btn-d-danger px-4 py-2 ms-2">
+            Написать мне
+          </button>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center ava">
+          <div class="d-block before"></div>
+          <img src="./assets/img/ava.png" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

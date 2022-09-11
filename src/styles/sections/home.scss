@@ -1,0 +1,29 @@
+.section-home {
+  font-size: 30px;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 27px;
+  }
+
+  div {
+    .h1 {
+      font-weight: 800px;
+    }
+  }
+
+  .ava .before {
+    width: 397px;
+    height: 397px;
+    background-color: #b71218;
+    border-radius: 25px;
+    position: absolute;
+    transform: rotate(-15deg);
+  }
+  img {
+    z-index: 100;
+  }
+}
