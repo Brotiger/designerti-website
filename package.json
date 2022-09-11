@@ -38,6 +38,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "bootstrap": "^5.2.1",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "wow.js": "^1.2.2"
   }
 }
