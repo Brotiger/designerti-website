@@ -1,0 +1,42 @@
+.section-stages{
+    .stages{
+        position: relative;
+        width: 1186px;
+        height: 316px;
+        margin-left: auto;
+        margin-right: auto;
+        .stage{
+            position: relative;
+            width: 316px;
+            height: 316px;
+
+            .inner{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .number{
+                    color: #b71218;
+                    font-size: 100px;
+                }
+            }
+            &:nth-child(1){
+                position: absolute;
+                left: 0px;
+            }
+            &:nth-child(2){
+                position: absolute;
+                left: 290px;
+            }
+            &:nth-child(3){
+                position: absolute;
+                left: 580px;
+            }
+            &:nth-child(4){
+                position: absolute;
+                left: 870px;
+            }
+        }
+    }
+}
