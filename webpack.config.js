@@ -75,28 +75,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/assets/img/ava.png"),
+          from: path.resolve(__dirname, "src/assets/img"),
           to: path.resolve(__dirname, buildFolder + "/assets/img"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/img/logo.svg"),
-          to: path.resolve(__dirname, buildFolder + "/assets/img"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/img/favicon.png"),
-          to: path.resolve(__dirname, buildFolder + "/assets/img"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/img/benefits/b1.svg"),
-          to: path.resolve(__dirname, buildFolder + "/assets/img/benefits"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/img/benefits/b2.svg"),
-          to: path.resolve(__dirname, buildFolder + "/assets/img/benefits"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/img/benefits/b3.svg"),
-          to: path.resolve(__dirname, buildFolder + "/assets/img/benefits"),
         },
       ],
     }),
