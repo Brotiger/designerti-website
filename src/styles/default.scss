@@ -7,12 +7,16 @@ body {
   .nav-link {
     color: black;
   }
+  .btn-d-danger {
+    font-size: 16px;
+  }
 }
 
 .btn-d-danger {
   background-color: #b71218;
   border: 3px solid #b71218;
   border-radius: 10px;
+  font-size: 27px;
   color: white;
   transition: all 0.2s ease-out;
 
