@@ -1,0 +1,22 @@
+@media (max-width: 992px) {
+  .navbar-nav {
+    .btn-d-danger {
+        background-color: white;
+        border: 0 solid white;
+      }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    .nav-link{
+      &.btn-d-danger {
+        color: white;
+
+        &:hover{
+          color: #b71218;
+        }
+      }
+    }
+  }
+}

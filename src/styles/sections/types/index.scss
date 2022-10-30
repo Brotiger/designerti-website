@@ -1,3 +1,6 @@
+@import "media";
+@import "animation";
+
 .section-types {
   padding-top: 80px;
 
@@ -6,6 +9,7 @@
   }
 
   .card {
+    height: 435px;
     z-index: 100;
     border-radius: 50px;
 
@@ -28,50 +32,6 @@
       font-size: 16px;
       color: #7d818b;
     }
-  }
-
-  .lt-card {
-    transition: all 0.2s ease-out;
-    top: 0;
-    left: 0;
-  }
-
-  .rt-card {
-    transition: all 0.2s ease-out;
-    top: 0;
-    right: 0;
-  }
-
-  .lb-card {
-    transition: all 0.2s ease-out;
-    bottom: 0;
-    left: 0;
-  }
-
-  .rb-card {
-    transition: all 0.2s ease-out;
-    bottom: 0;
-    right: 0;
-  }
-
-  .lt-card:hover {
-    top: -25px;
-    left: -25px;
-  }
-
-  .rt-card:hover {
-    top: -25px;
-    right: -25px;
-  }
-
-  .lb-card:hover {
-    bottom: -25px;
-    left: -25px;
-  }
-
-  .rb-card:hover {
-    bottom: -25px;
-    right: -25px;
   }
 
   .types {

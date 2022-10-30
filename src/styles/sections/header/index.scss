@@ -1,8 +1,12 @@
+@import "media";
+
 .navbar-nav {
     .nav-link {
+      font-size: 18px;
       color: black;
     }
-    .btn-d-danger {
-      font-size: 16px;
+
+    a {
+      text-decoration: none; 
     }
 }
