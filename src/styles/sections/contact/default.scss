@@ -2,6 +2,18 @@
     padding-top: 120px;
     padding-bottom: 120px;
 
+    .links{
+        a{
+            text-decoration: none;
+        }
+    }
+
+    a{
+        &:hover{
+            color: #b71218;
+        }
+    }
+
     ul{
         list-style-type: none;
         font-size: 32px;
@@ -12,7 +24,6 @@
 
         &.agreement{
             font-size: 10px;
-            max-width: 70%;
         }
     }
 
