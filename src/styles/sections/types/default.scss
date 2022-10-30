@@ -1,0 +1,52 @@
+@import "media";
+@import "animation";
+
+.section-types {
+  padding-top: 80px;
+
+  .h2{
+    padding-bottom: 80px;
+  }
+
+  .card {
+    height: 435px;
+    z-index: 100;
+    border-radius: 50px;
+
+    h3 {
+      color: #b71218;
+      font-size: 100px;
+      text-transform: uppercase;
+      font-family: "Gallient";
+    }
+
+    .translation {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .time {
+      font-size: 16px;
+      color: #7d818b;
+    }
+  }
+
+  .types {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+
+    .crosshair {
+      position: absolute;
+      left: calc(50% - 150px);
+      top: calc(50% - 150px);
+      width: 300px;
+      height: 300px;
+      background-color: #b71218;
+      border-radius: 50%;
+    }
+  }
+}

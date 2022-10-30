@@ -1,5 +1,14 @@
 @media (max-width: 768px) {
     .section-types {
+        .card {
+            h3 {
+                color: #b71218;
+                font-size: 80px;
+                text-transform: uppercase;
+                font-family: "Gallient";
+            }
+        }
+
         h2 {
             font-size: 34px;
         }

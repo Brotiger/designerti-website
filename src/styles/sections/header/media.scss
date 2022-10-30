@@ -4,17 +4,13 @@
         background-color: white;
         border: 0 solid white;
       }
-  }
-}
 
-@media (min-width: 992px) {
-  .navbar-nav {
-    .nav-link{
+    .nav-link {
       &.btn-d-danger {
-        color: white;
-
+        color: black;
+    
         &:hover{
-          color: #b71218;
+          color: black;
         }
       }
     }

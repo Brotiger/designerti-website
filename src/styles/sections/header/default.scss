@@ -1,0 +1,18 @@
+.navbar-nav {
+    .nav-link {
+      font-size: 18px;
+      color: black;
+
+      &.btn-d-danger {
+        color: white;
+
+        &:hover{
+          color: #b71218;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none; 
+    }
+}

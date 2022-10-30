@@ -1,0 +1,44 @@
+.section-gallery{
+    padding-top: 80px;
+    
+    .h2{
+        padding-bottom: 80px;
+    }
+
+    .img {
+        box-sizing:border-box;
+        height: 488px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 70px;
+
+        &.img-1{
+            background-image: url('/assets/img/gallery/img1.png');
+        }
+    
+        &.img-2{
+            background-image: url('/assets/img/gallery/img2.jpg');
+        }
+    
+        &.img-3{
+            background-image: url('/assets/img/gallery/img3.jpg');
+        }
+    
+        &.img-4{
+            background-image: url('/assets/img/gallery/img4.png');
+        }
+    
+        &.img-5{
+            background-image: url('/assets/img/gallery/img5.jpg');
+        }
+    
+        &.img-6{
+            background-image: url('/assets/img/gallery/img6.jpg');
+        }
+    
+        &.img-7{
+            background-image: url('/assets/img/gallery/img7.jpg');
+            background-position-x: 64%;
+        }
+    }
+}
