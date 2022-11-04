@@ -1,8 +1,10 @@
 body {
+  overflow-x: hidden;
   font-family: "Manrope", sans-serif;
   color: black;
 
   .btn-top{
+    border-radius: 10px;
     position: fixed;
     bottom: 25px;
     right: 25px;
