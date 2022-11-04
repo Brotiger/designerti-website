@@ -8,8 +8,8 @@
     <link href="./assets/img/favicon.png" type="image/png" />
   </head>
   <body class="container">
-    <header class="border-bottom border-dark">
-      <nav class="navbar navbar-expand-lg bg-white py-3">
+    <header>
+      <nav class="border-bottom border-dark navbar navbar-expand-lg bg-white py-3 fixed-top container">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/img/logo.svg" />
@@ -26,21 +26,38 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="ms-md-auto navbar-nav mb-2 mb-lg-0 text-center mt-4 mt-lg-0">
-              <li class="nav-item me-4">
-                <a class="nav-link hover" href="#">Главная</a>
+            <ul class="ms-md-auto navbar-nav mb-2 mb-lg-0 mt-4 mt-lg-0">
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Главная
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#section-types">Мои услуги</a></li>
+                  <li><a class="dropdown-item hover" href="#section-stages">Этапы работы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-gallery">Мои работы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-comment">Отзывы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-contact">Контакты</a></li>
+                </ul>
               </li>
-              <li class="nav-item me-4">
-                <a class="nav-link hover" href="#">Обо мне</a>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Обо мне
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#">Биография</a></li>
+                  <li><a class="dropdown-item hover" href="#">Портфолио</a></li>
+                  <li><a class="dropdown-item hover" href="#">Услуги</a></li>
+                </ul>
               </li>
-              <li class="nav-item me-4">
-                <a class="nav-link hover" href="#">Услуги</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link hover" href="#">Блог</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link hover" href="#">Мерч</a>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Для дизайнеров
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#">Блог</a></li>
+                  <li><a class="dropdown-item hover" href="#">Курс</a></li>
+                  <li><a class="dropdown-item hover" href="#">Ресурсы</a></li>
+                </ul>
               </li>
               <li class="nav-item me-4">
                 <a class="nav-link btn-d-danger px-lg-5 py-lg-2 ms-lg-2 d-lg-block" href="#">Заказать</a>
@@ -60,9 +77,9 @@
               своему делу отношесь с трепетом, ответственно, с высоким уровнем
               профессионализма.
             </div>
-            <button class="btn-d-danger px-4 py-2 ms-2">
+            <a class="btn-d-danger px-4 py-2 ms-2" href="#section-contact">
               Написать мне
-            </button>
+            </a>
           </div>
         </div>
         <div class="col d-flex order-1 order-lg-2 justify-content-center align-items-center ava py-5 py-lg-0">
@@ -71,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section class="section-types px-2">
+    <section class="section-types px-2" id="section-types">
       <h2 class="h2 text-center px-5 wow fadeInDown">
         Мои услуги
       </h2>
@@ -138,7 +155,7 @@
         <button class="btn-d-danger px-4 py-2 ms-lg-2 mt-5 me-lg-5">Подробнее</button>
       </div>
     </section>
-    <section class="section-stages px-2">
+    <section class="section-stages px-2" id="section-stages">
       <h2 class="h2 text-center px-5 wow fadeInDown">
         Этапы работы
       </h2>
@@ -169,9 +186,9 @@
           </div>
         </div>
     </section>
-    <section class="section-gallery px-2">
+    <section class="section-gallery px-2" id="section-gallery">
       <h2 class="h2 text-center px-5 wow fadeInDown">
-        Портфолио
+        Мои работы
       </h2>
       <div class="container-fluid">
         <div class="row">
@@ -208,7 +225,7 @@
         <button class="btn-d-danger px-4 py-2 ms-lg-2 mt-5 me-lg-5">Подробнее</button>
       </div>
     </section>
-    <section class="section-comment px-2">
+    <section class="section-comment px-2" id="section-comment">
       <h2 class="h2 px-5 wow fadeInLeft text-center">
         Отзывы
       </h2>
@@ -278,7 +295,7 @@
         </button>
       </div>
     </section>
-    <section class="section-contact px-2">
+    <section class="section-contact px-2" id="section-contact">
       <div class="row">
         <h2 class="h2 ps-md-5 wow fadeInLeft text-center mb-5">
           Контакты
@@ -332,4 +349,7 @@
       </div>
     </footer>
   </body>
+  <a class="btn-top" href="#">
+    <i class="bi bi-chevron-up text-danger"></i>
+  </a>
 </html>

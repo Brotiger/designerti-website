@@ -1,9 +1,27 @@
 body {
   font-family: "Manrope", sans-serif;
   color: black;
+
+  .btn-top{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #b71218;
+    background-color: white;
+    font-size: 40px;
+
+    i {
+      position: absolute;
+      bottom: -7px;
+      left: 2px;
+    }
+  }
 }
 
 .btn-d-danger {
+  text-decoration: none;
   background-color: #b71218;
   border: 3px solid #b71218;
   border-radius: 10px;
