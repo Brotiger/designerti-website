@@ -5,3 +5,68 @@
         }
     }
 }
+
+@media (max-width: 1400px) {
+    .section-stages{
+        .stages{
+            position: relative;
+            width: 606px;
+            height: 606px;
+            .stage{
+                position: relative;
+
+                &:nth-child(1){
+                    position: absolute;
+                    left: 0;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    left: 290px;
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    top: 290px;
+                    left: 0;
+                }
+                &:nth-child(4){
+                    position: absolute;
+                    top: 290px;
+                    left: 290px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-stages{
+        .stages{
+            position: relative;
+            width: 316px;
+            height: 1186px;
+            .stage{
+                position: relative;
+
+                &:nth-child(1){
+                    position: absolute;
+                    left: 0;
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    top: 290px;
+                    left: 0;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    top: 580px;
+                    left: 0;
+                }
+                &:nth-child(4){
+                    position: absolute;
+                    top: 870px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
