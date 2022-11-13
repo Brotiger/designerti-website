@@ -1,5 +1,6 @@
 .PHONY: build
 build:
 	rm -rf ./designerti.zip
-	zip -r designerti.zip ./wp/themes/designerti 
+	cd ./wp/themes/designerti; \
+	zip -r ../../../designerti.zip ./
 .DEFAULT_GOAL := build
