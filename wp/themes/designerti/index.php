@@ -1,0 +1,350 @@
+<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="./assets/img/favicon.png" type="image/png">
+  <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_esm-0c0200.js"></script><script defer="defer" src="main.js"></script><link href="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_esm-0c0200.css" rel="stylesheet"><link href="style.css" rel="stylesheet"></head>
+  <body class="container">
+    <header>
+      <nav class="border-bottom border-dark navbar navbar-expand-lg bg-white py-3 fixed-top container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.svg">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="ms-md-auto navbar-nav mb-2 mb-lg-0 mt-4 mt-lg-0">
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Главная
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#section-types">Мои услуги</a></li>
+                  <li><a class="dropdown-item hover" href="#section-stages">Этапы работы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-gallery">Мои работы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-comment">Отзывы</a></li>
+                  <li><a class="dropdown-item hover" href="#section-contact">Контакты</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Обо мне
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#">Биография</a></li>
+                  <li><a class="dropdown-item hover" href="#">Портфолио</a></li>
+                  <li><a class="dropdown-item hover" href="#">Услуги</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Для дизайнеров
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover" href="#">Блог</a></li>
+                  <li><a class="dropdown-item hover" href="#">Курс</a></li>
+                  <li><a class="dropdown-item hover" href="#">Ресурсы</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link btn-d-danger px-lg-5 py-lg-2 ms-lg-2 d-lg-block" href="#">Заказать</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-home border-bottom border-dark px-2 py-5">
+      <div class="row">
+        <div class="col order-2 order-lg-1 text-center text-lg-start">
+          <div class="wow fadeInLeft">
+            <div class="h1 text-danger font-weight-bold">Привет,</div>
+            <div class="pt-4 pb-5 ms-2">
+              меня зовут Елизавета. Я графический дизайнер, мне 23 года. К
+              своему делу отношесь с трепетом, ответственно, с высоким уровнем
+              профессионализма.
+            </div>
+            <a class="btn-d-danger px-4 py-2 ms-2" href="#section-contact">
+              Написать мне
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex order-1 order-lg-2 justify-content-center align-items-center ava py-5 py-lg-0 wow fadeInRight">
+            <div class="d-block before"></div>
+            <img src="./assets/img/ava.png">
+        </div>
+      </div>
+    </section>
+    <section class="section-types px-2" id="section-types">
+      <h2 class="h2 text-center px-5 wow fadeInDown">
+        Мои услуги
+      </h2>
+      <h3 class="text-center px-5 pb-5">Создам дизайн, который будет работать за вас</h3>
+      <div class="types">
+        <div class="row">
+          <div class="col pe-lg-0">
+            <div class="lt-card card border border-dark p-5 wow fadeInLeft">
+              <h3>Logo</h3>
+              <div class="ms-5">
+                <span class="translation">Разработка логотипа</span>
+                <p class="py-3">
+                  Разработаем логотип, который будет работать на вашу компанию.
+                </p>
+                <span class="time">Срок разработки — от 3 дней. </span>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-4 mt-lg-0 ps-lg-0">
+            <div class="rt-card card border border-dark p-5 wow fadeInRight">
+              <h3>Brand</h3>
+              <div class="ms-5">
+                <span class="translation">Брендинг</span>
+                <p class="py-3">
+                  Проведём дизайн-исследование, разработаем брендинг, оформим
+                  ваш проект в единый брендбук.
+                </p>
+                <span class="time">Срок разработки — от 5 дней. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="crosshair wow fadeIn d-none d-lg-block"></div>
+        <div class="row">
+          <div class="col-12 mt-4 mt-lg-0 col-lg-6 pe-lg-0">
+            <div class="lb-card card border border-dark p-5 wow fadeInLeft">
+              <h3>Art</h3>
+              <div class="ms-5">
+                <span class="translation">Иллюстрация</span>
+                <p class="py-3">
+                  Выполню иллюстрацию с учетом всех пожеланий и специфики
+                  проекта.
+                </p>
+                <span class="time">Срок разработки — от 2 дней. </span>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-4 mt-lg-0 ps-lg-0">
+            <div class="rb-card card border border-dark p-5 wow fadeInRight">
+              <h3>Web</h3>
+              <div class="ms-5">
+                <span class="translation">Разработка сайта</span>
+                <p class="py-3">
+                  Разработаем лендинг, многостраничный сайт или интернет-магазин
+                  любого уровня сложности
+                </p>
+                <span class="time">Срок разработки — от 7 дней.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-flex flex-row-reverse block-buttons text-center">
+        <button class="btn-d-danger px-4 py-2 ms-lg-2 mt-5 me-lg-5 wow fadeInRight">Подробнее</button>
+      </div>
+    </section>
+    <section class="section-stages px-2" id="section-stages">
+      <h2 class="h2 text-center px-5 wow fadeInDown">
+        Этапы работы
+      </h2>
+        <div class="stages d-flex">
+          <div class="stage border border-secondary rounded-circle wow rollIn">
+            <div class="inner text-center">
+              <div class="number">1</div>
+              <div>Выбираем удобный способ связи и обговариваем задачу</div>
+            </div>
+          </div>
+          <div class="stage border border-secondary rounded-circle wow bounceInUp">
+            <div class="inner text-center">
+              <div class="number">3</div>
+              <div>Сдача работы в оговоренный срок</div>
+            </div>
+          </div>
+          <div class="stage border border-secondary rounded-circle wow bounceInDown">
+            <div class="inner text-center">
+              <div class="number">2</div>
+              <div>Согласовываем сроки и договариваемся об условиях оплаты</div>
+            </div>
+          </div>
+          <div class="stage border border-secondary rounded-circle wow bounceInRight">
+            <div class="inner text-center">
+              <div class="number">4</div>
+              <div>Выбираем удобный способ связи и обговариваем задачу</div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section-gallery px-2" id="section-gallery">
+      <h2 class="h2 text-center px-5 wow fadeInDown">
+        Мои работы
+      </h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-7 wow fadeInLeft">
+            <div class="img img-1"></div>
+          </div>
+          <div class="col-12 col-md-5 mt-4 mt-md-0 wow fadeInRight">
+            <div class="img img-2"></div>
+          </div>
+        </div>
+        <div class="row mt-md-4">
+          <div class="col-12 col-md-5 mt-4 mt-md-0 wow fadeInLeft">
+            <div class="img img-3"></div>
+          </div>
+          <div class="col-12 col-md-7 mt-4 mt-md-0 wow fadeInRight">
+            <div class="img img-4"></div>
+          </div>
+        </div>
+        <div class="row mt-md-4">
+          <div class="col mt-4 mt-md-0 wow fadeIn">
+            <div class="img img-5"></div>
+          </div>
+        </div>
+        <div class="row mt-md-4">
+          <div class="col-12 col-md-7 mt-4 mt-md-0 wow fadeInLeft">
+            <div class="img img-6"></div>
+          </div>
+          <div class="col-12 col-md-5 mt-4 mt-md-0 wow fadeInRight">
+            <div class="img img-7"></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-flex flex-row-reverse block-buttons text-center">
+        <button class="btn-d-danger px-4 py-2 ms-lg-2 mt-5 me-lg-5 wow fadeInRight">Подробнее</button>
+      </div>
+    </section>
+    <section class="section-comment px-2" id="section-comment">
+      <h2 class="h2 px-5 wow fadeInDown text-center">
+        Отзывы
+      </h2>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide wow fadeIn" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner border border-dark">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-caption text-center text-md-start">
+              <div class="d-flex">
+                <img src="./assets/img/comment.svg" class="d-none d-md-block pe-5">
+                <div>
+                  <p>
+                    Благодарю за качественную и оперативную работу.Заказывал у Елизаветы профессиональную обработку фотографий и открытку для девушки, которая болеет, чтобы пожелать ей скорейшего выздоровления. Она была в восторге, и я вместе с ней. Заказ был выполнен за 1-2 часа. Спасибо!
+                    Иван Кулин
+                  </p>
+                  <p class="text-secondary pt-4">
+                    Берестнев Дмитрий
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-caption text-center text-md-start">
+              <div class="d-flex">
+                <img src="./assets/img/comment.svg" class="d-none d-md-block pe-5">
+                <div>
+                  <p>
+                    Благодарю за качественную и оперативную работу.Заказывал у Елизаветы профессиональную обработку фотографий и открытку для девушки, которая болеет, чтобы пожелать ей скорейшего выздоровления. Она была в восторге, и я вместе с ней. Заказ был выполнен за 1-2 часа. Спасибо!
+                    Иван Кулин
+                  </p>
+                  <p class="text-secondary pt-4">
+                    Берестнев Дмитрий
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption text-center text-md-start">
+              <div class="d-flex">
+                <img src="./assets/img/comment.svg" class="d-none d-md-block pe-5">
+                <div>
+                  <p>
+                    Благодарю за качественную и оперативную работу.Заказывал у Елизаветы профессиональную обработку фотографий и открытку для девушки, которая болеет, чтобы пожелать ей скорейшего выздоровления. Она была в восторге, и я вместе с ней. Заказ был выполнен за 1-2 часа. Спасибо!
+                    Иван Кулин
+                  </p>
+                  <p class="text-secondary pt-4">
+                    Берестнев Дмитрий
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="section-contact px-2" id="section-contact">
+      <div class="row">
+        <h2 class="h2 ps-md-5 wow fadeInDown text-center mb-5">
+          Контакты
+        </h2>
+        <div class="col order-2 order-md-1 wow fadeInLeft">
+          <div class="pt-4">
+            <ul class="ps-0 ps-md-5 links">
+              <li class="text-nowrap text-center text-md-start"><i class="bi bi-envelope-fill text-danger pe-3"></i> <a href="#" class="hover">lisa@designerti.ru</a></li>
+              <li class="text-nowrap text-center text-md-start"><i class="bi bi-people-fill text-danger pe-3"></i> <a href="#" class="hover">t.me/designerti</a></li>
+              <li class="text-nowrap text-center text-md-start"><i class="bi bi-telegram text-danger pe-3"></i> <a href="#" class="hover">t.me/vetolsa</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col pt-5 text-center text-md-start ps-md-5 order-1 order-md-2 wow fadeInRight">
+          <p>Хочу поработать с Designerti!</p>
+          <form>
+            <div>
+              <input type="text" placeholder="Ваше имя" class="pb-3 mt-4">
+            </div>
+            <div>
+              <input type="phone" placeholder="Контактный телефон" class="pb-3 mt-4">
+            </div>
+            <div>
+              <input type="email" placeholder="Email" class="pb-3 mt-4">
+            </div>
+            <div>
+              <buttom type="submit" class="btn-d-danger py-2 px-5 mt-5 mb-4">
+                Заказать
+              </buttom>
+            </div>
+          </form>
+          <p class="agreement text-center text-md-start w-75 mx-auto mx-md-0">
+            Нажимая на кнопку “Заказать”, Вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a> и обработку персональных данных.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4 px-2 border-top border-dark">
+      <div class="row">
+        <div class="order-3 order-md-1 mt-2 mt-md-0 col-12 col-md-4 text-center text-md-start">
+          ©2022
+        </div>
+        <div class="order-1 order-md-2 col-12 col-md-4 text-center text-md-center">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.svg">
+          </a>
+        </div>
+        <div class="order-2 order-md-3 mt-2 mt-md-0 col-12 col-md-4 text-center text-md-end">
+          <a href="#" class="hover">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <a class="btn-top" href="#">
+    <i class="bi bi-chevron-up text-danger"></i>
+  </a>
+</html>
+
+<?php get_footer(); ?>
