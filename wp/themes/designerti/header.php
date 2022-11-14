@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="./assets/img/favicon.png" type="image/png">
-  <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_esm-0c0200.js"></script><script defer="defer" src="main.js"></script><link href="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_esm-0c0200.css" rel="stylesheet">
   <?php wp_head() ?>
 </head>
   <body class="container">
