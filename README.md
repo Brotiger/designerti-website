@@ -28,6 +28,10 @@
 
 Так же необходимо перенести в соответствующие директории [css](./wp/themes/designerti/assets/css) и [js](./wp/themes/designerti/assets/js) файлы.
 
+Авто сборка zip архива для темы WP:
+
+    make
+
 ## Запуск WP
 
     docker compose build
